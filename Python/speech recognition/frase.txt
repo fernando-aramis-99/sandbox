@@ -1,0 +1,1 @@
+Teste de implementação de reprodução de audio mediante leitura de caracteres, baseado na linguagem portugues, e com o código desenvolvido na linguagem de programação Python !
