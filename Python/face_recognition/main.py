@@ -1,16 +1,28 @@
-# This is a sample Python script.
+# pip install opencv-python
+# pip install mediapipe
+import cv2 #opencv
+import mediapipe as mp
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+webcam = cv2.VideoCapture(0) # inicializar o opencv e o mediapipe
+solucao_fr = mp.solutions.face_detection
+reconhecedor_rostos = solucao_fr.FaceDetection()
+desenho = mp.solutions.drawing_utils
 
+while True:
+    #ler as informacoes da webcam
+    verificador, frame = webcam.read()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    if not verificador:
+        break
+    #reconhecer os rostos que estiverem presentes
+    lista_rostos = reconhecedor_rostos.process(frame)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    if lista_rostos.detections:
+        for rosto in lista_rostos.detections: #desenhar os rostos na imagem
+            desenho.draw_detection(frame, rosto)
+    cv2.imshow("Rostos na webcam", frame)
+    #ESC - finaizar loop
+    if cv2.waitKey(5) == 27: # codigo de letra 27 - ESC ou ord('a')
+        break
+webcam.release()
+cv2.destroyAllWindows()
