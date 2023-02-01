@@ -1,5 +1,8 @@
+import java.util.Scanner;
+import java.util.*;
 public class Main
 {
+    private static Scanner sc = new Scanner(System.in);
     private static Lista_01 lista = new Lista_01();
     private static Unirio_lista unilista = new Unirio_lista();
     private static int valor = -1;
@@ -7,7 +10,7 @@ public class Main
     public static void main(String[] args)
     {
         System.out.println("Hello world!");
-        menu_lista();
+//        menu_lista();
         menu_unilista();
     }
     public static void menu_lista()
@@ -22,6 +25,7 @@ public class Main
                     "\n5 - Antecessor e Sucessor" +
                     "\n0 - Sair" +
                     "\n  - Selecione o programa: ");
+            valor = Integer.parseInt(sc.next());
             switch (valor)
             {
                 case 0: break;
@@ -40,20 +44,15 @@ public class Main
         {
             System.out.print("Menu - Unirio Lista" +
                     "\n1 - Contador de pares" +
-                    "\n2 - *Calcular média aritmética" +
-                    "\n3 - Reajuste de saldo" +
-                    "\n4 - Quantidade de salários" +
-                    "\n5 - Antecessor e Sucessor" +
+                    "\n2 - Busca binaria" +
                     "\n0 - Sair" +
                     "\n  - Selecione o programa: ");
+            valor = Integer.parseInt(sc.next());
             switch (valor)
             {
                 case 0: break;
                 case 1: unilista.contador_pares();break;
-                case 2: lista.media_aritmetica();break;
-                case 3: lista.ajuste_saldo();break;
-                case 4: lista.quant_salario();break;
-                case 5: lista.ante_sucessor();break;
+                case 2: unilista.busca_binaria();break;
                 default: System.out.println("! Seleção Invalida !");break;
             }
         } while (valor != 0);
