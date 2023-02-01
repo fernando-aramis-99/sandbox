@@ -17,16 +17,18 @@ public class Main
                     "\n2 - Calcular média aritmética" +
                     "\n3 - Reajuste de saldo" +
                     "\n4 - Quantidade de salários" +
+                    "\n5 - Antecessor e Sucessor" +
                     "\n0 - Sair" +
                     "\n  - Selecione o programa: ");
             switch (valor)
             {
                 case 0: break;
-                case 1: lista.idade_dias(); break;
-                case 2: lista.media_aritmetica(); break;
-                case 3: lista.ajuste_saldo(); break;
-                case 4: lista.quant_salario(); break;
-                default: System.out.println("! Seleção Invalida !"); break;
+                case 1: lista.idade_dias();break;
+                case 2: lista.media_aritmetica();break;
+                case 3: lista.ajuste_saldo();break;
+                case 4: lista.quant_salario();break;
+                case 5: lista.ante_sucessor();break;
+                default: System.out.println("! Seleção Invalida !");break;
             }
         } while (valor != 0);
     }

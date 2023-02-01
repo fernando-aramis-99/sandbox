@@ -63,4 +63,15 @@ public class Lista_01
         salario = Float.parseFloat(sc.next());
         System.out.println("A quantidade de salários minimos obtidos é de: " +(salario/1302f));
     }
+    public void ante_sucessor()
+    {
+//        Desenvolva um algoritmo em Java que leia um número inteiro e imprima o seu antecessor e seu sucessor.
+
+        int numero;
+
+        System.out.print("Digite um numero interiro: ");
+        numero = Integer.parseInt(sc.next());
+        System.out.println("O Antecessor é: "+(numero-1));
+        System.out.println("O Sucessor é: "+(numero+1));
+    }
 }
