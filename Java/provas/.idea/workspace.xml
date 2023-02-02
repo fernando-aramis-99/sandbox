@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a849967-ef5a-4b68-9af5-f2e997dcd22a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Provas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../training/out/production/training/Lista_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../training/out/production/training/Lista_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../training/out/production/training/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../training/out/production/training/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../training/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../training/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../training/src/Unirio_lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../training/src/Unirio_lista.java" afterDir="false" />
-    </list>
+    <list default="true" id="2a849967-ef5a-4b68-9af5-f2e997dcd22a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +33,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -48,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675287437411</updated>
       <workItem from="1675287438504" duration="232000" />
+      <workItem from="1675289199800" duration="1189000" />
     </task>
     <servers />
   </component>
